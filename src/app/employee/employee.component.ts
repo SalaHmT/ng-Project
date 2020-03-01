@@ -19,5 +19,6 @@ export class EmployeeComponent {
   }
   onclick(i: Employee) {
     this.emp = i;
+    return this.emp;
   }
 }
