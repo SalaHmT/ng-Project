@@ -1,12 +1,12 @@
 <div style="list-style-position: inside ;text-align: center; ">
   <h1>Les noms des employees</h1>
+
   <ul *ngFor="let i of listEmp" (click)="onclick(i)">
-    <li style="align-content: center;">
+    <li style="align-content: center; ">
       {{ i.name }}
     </li>
   </ul>
-  <div>
-    {{ emp.id }} . {{ emp.name }} - {{ emp.username }} -
-    {{ emp.address.street }}
-  </div>
+  <h6>cliquer sur le nom pour autre details...</h6>
 </div>
+
+<router-outlet></router-outlet>

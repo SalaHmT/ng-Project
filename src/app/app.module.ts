@@ -8,20 +8,22 @@ import { AppComponent } from "./app.component";
 import { EmployeeComponent } from "./employee/employee.component";
 import { ServiceEmpService } from "./service-emp.service";
 import { RouterModule } from "@angular/router";
+import { NavbarComponent } from "./navbar/navbar.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
     NotFoundComponent,
-    ListEmpComponent
+    ListEmpComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: "", component: EmployeeComponent },
-      { path: "listemp/:id", component: ListEmpComponent },
-      { path: "listemp", component: EmployeeComponent },
+      { path: "details/:id", component: ListEmpComponent },
+      { path: "empname", component: EmployeeComponent },
       { path: "**", component: NotFoundComponent }
     ])
   ],
