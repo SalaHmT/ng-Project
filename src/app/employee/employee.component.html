@@ -1,13 +1,23 @@
-<div style="list-style-position: inside ;text-align: center; ">
+<div class="contnair">
   <div>
     <hr />
-    <h2 style="color: gray;"><strong>L</strong>istes Employees</h2>
+    <h2 class="text-center "><strong>L</strong>istes Employees</h2>
     <hr />
   </div>
 
-  <div class="bg-muted" class="container">
-    <ul class="list-unstyled" *ngFor="let i of listEmp" (click)="onclick(i)">
-      <li style="align-content: center; cursor: pointer; ">
+  <div class="container">
+    <label><strong>Le Nom :</strong> </label>
+    <ul
+      class="list-group"
+      class="list-unstyled"
+      *ngFor="let i of listEmp"
+      (click)="onclick(i)"
+    >
+      <li
+        class="text-justfied"
+        class="list-group-item"
+        style=" cursor: pointer; "
+      >
         {{ i.name }}
       </li>
     </ul>
