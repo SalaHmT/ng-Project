@@ -1,13 +1,14 @@
 <div style="list-style-position: inside ;text-align: center; ">
-  <h1>Les noms des employees</h1>
-
-  <ul *ngFor="let i of listEmp" (click)="onclick(i)">
-    <li style="align-content: center; cursor: pointer; ">
-      {{ i.name }}
-    </li>
-  </ul>
+  <h3>Les noms des employees</h3>
+  <div class="container">
+    <ul *ngFor="let i of listEmp" (click)="onclick(i)">
+      <li style="align-content: center; cursor: pointer; ">
+        {{ i.name }}
+      </li>
+    </ul>
+  </div>
+  <h6 class="text-center">
+    <kbd>Cliquer sur le nom pour d'autre details...</kbd>
+  </h6>
+  <router-outlet></router-outlet>
 </div>
-<h6 style="text-align:center;">
-  cliquer sur le nom pour autre details...
-</h6>
-<router-outlet></router-outlet>
