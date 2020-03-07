@@ -2,7 +2,12 @@
 <div>
   {{ done(empid - 1) }}
 </div>
+<hr />
 <div style="list-style-position: inside ;text-align: center; ">
-  {{ emp.id }} . {{ emp.name }} - {{ emp.username }} - {{ emp.email }} -
-  {{ emp.address.street }} - {{ emp.address.suite }} - {{ emp.phone }}
+  <strong>{{ emp.id }}</strong> <strong>.</strong> {{ emp.name }}
+  <strong>-</strong> {{ emp.username }} <strong>-</strong> {{ emp.email }}
+  <strong>-</strong> {{ emp.address.street }} <strong>-</strong>
+  {{ emp.address.suite }} <strong>-</strong>
+  {{ emp.phone }}
 </div>
+<hr />
