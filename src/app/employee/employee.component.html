@@ -1,7 +1,11 @@
 <div style="list-style-position: inside ;text-align: center; ">
-  <h3>Lists Employees</h3>
-  <hr />
-  <div class="container">
+  <div>
+    <hr />
+    <h2 style="color: gray;">Listes Employees</h2>
+    <hr />
+  </div>
+
+  <div class="bg-muted" class="container">
     <ul class="list-unstyled" *ngFor="let i of listEmp" (click)="onclick(i)">
       <li style="align-content: center; cursor: pointer; ">
         {{ i.name }}
