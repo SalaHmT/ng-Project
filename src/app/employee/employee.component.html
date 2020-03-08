@@ -1,30 +1,30 @@
-<div class="contnair">
+<div class="container-fluid ">
   <div>
     <hr />
     <h3 class="text-center "><strong>L</strong>istes Employees</h3>
     <hr />
-  </div>
 
-  <div class="container">
-    <label class="text-justify"><strong>Le Nom :</strong> </label>
-    <ul
-      class="list-group"
-      class="list-unstyled"
-      *ngFor="let i of listEmp"
-      (click)="onclick(i)"
-    >
-      <li
-        class="text-justify"
-        class="list-group-item"
-        style=" cursor: pointer; "
+    <div class="container">
+      <label class="text-justify"><strong>Le Nom :</strong> </label>
+      <ul
+        class="list-group"
+        class="list-unstyled"
+        *ngFor="let i of listEmp"
+        (click)="onclick(i)"
       >
-        {{ i.name }}
-      </li>
-    </ul>
+        <li
+          class="text-justify"
+          class="list-group-item"
+          style=" cursor: pointer; "
+        >
+          {{ i.name }}
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <h6 class="text-center">
+      <kbd>Cliquer sur le nom pour d'autre details...</kbd>
+    </h6>
+    <router-outlet></router-outlet>
   </div>
-  <hr />
-  <h6 class="text-center">
-    <kbd>Cliquer sur le nom pour d'autre details...</kbd>
-  </h6>
-  <router-outlet></router-outlet>
 </div>
